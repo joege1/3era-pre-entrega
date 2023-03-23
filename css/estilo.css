@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    
+    
+    
+}
+body{
+    background-color: #2fcdcd;
+}
+
+nav{
+    background: #2fcdcd;
+    height: 150px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 120px;
+    border-radius: 50%;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: rgb(231, 153, 231);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px ){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+.mangas{
+    display: grid;
+    grid-template-columns: 100%;
+   
+
+}
+.mangas__img{
+    width: 1500px;
+    height: 300px;
+    position: relative;
+    
+
+}
+@media screen and (max-width:1500px) {
+    .slider-frame{ 
+     max-width: 200px;
+     position: relative;
+    }
+}
+
+.mangas__h1{
+    margin-left: 50%
+    ;
+    
+}
+.capa{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    
+    
+}
+.parrafo{
+    z-index: 1;
+    width: 740px;
+    height: 440px;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    background: #fff;
+    box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+    border-radius: 5px;
+    text-align: justify;
+    
+}
+.parrafo img{
+    width: 310px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+.slider-frame {
+	width: 580px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+    
+    
+}
+.p__carrousel{
+    text-align:center
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+@media screen and (max-width:580px) {
+   .slider-frame{ 
+    max-width: 200px;
+    position: relative;
+    
+
+}
+
+    
+}
+
+.footer{
+    display: flex;
+    font-weight: 600px;
+    padding-right: 10px;
+    
+}
+.letra__footer{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, sans-serif serif;
+    color: fuchsia
+}
+
+.receta{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    
+    
+}
+.parrafo3{
+    margin: 50px;
+    z-index: 1;
+    width: 740px;
+    height: 440px;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    background: #fff;
+    box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+    border-radius: 5px;
+    text-align: justify;
+    
+}
+.parrafo3 img{
+    width: 200px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
